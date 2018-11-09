@@ -31,3 +31,24 @@ function muestraPantallaPrincipal(){
 
 app.on('ready', muestraPantallaPrincipal);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
