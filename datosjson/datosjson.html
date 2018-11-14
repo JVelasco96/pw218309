@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		img{
+			border-radius: 500px;
+		}
+	</style>
+	<script>
+		var datosPersona = function(){
+			fetch('https://randomuser.me/api/')
+			.then(datos => datos.json())
+			.then(datos => {
+				//console.log(datos);
+				console.log(datos.results[0].picture.large)
+				console.log(datos.results[0].name.first + " " + datos.results[0].name.last)
+				document.getElementById('foto').setAttribute('src', datos.results[0].picture.large);
+				document.getElementById('demo').innerHTML = datos.results[0].name.first
+			})// respuesta del servidor
+		}
+	</script>
+</head>
+<body>
+	<img src="" id="foto" alt="Foto de la persona">
+	<article id="demo"></article>
+	<button onclick="datosPersona()">Persona</button>
+</body>
+</html>
