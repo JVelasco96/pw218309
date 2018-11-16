@@ -1,0 +1,26 @@
+{
+  "name": "randomuserelectron",
+  "version": "1.0.0",
+  "description": "usuarios para electron",
+  "main": "main.js",
+  "dependencies": {
+    "asar": "^0.14.5",
+    "electron": "^3.0.9",
+    "electron-require": "^0.3.0"
+  },
+  "devDependencies": {
+    "electron-packager": "^12.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "empaqueta": "electron-packager . Random --overwrite --asar"
+  },
+  "keywords": [
+    "electron",
+    "usuarios",
+    "random"
+  ],
+  "author": "Javier A. Velasco",
+  "license": "MIT"
+}
